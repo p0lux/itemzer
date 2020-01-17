@@ -7,9 +7,14 @@ from scraper.get_runes import GetRunes
 
 import sys   
 
-GetItems(sys.argv[1]).get_items()
-GetRunes(sys.argv[1]).list_runes()
-#GetSkills(sys.argv[1]). 
+def main():
+        
+    GetItems(sys.argv[1]).get_items()
+    GetRunes(sys.argv[1]).list_runes()
+    #GetSkills(sys.argv[1]). 
+
+if __name__ == "__main__":
+    main()
 
 		
 

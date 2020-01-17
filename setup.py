@@ -1,17 +1,15 @@
 #! /usr/bin/env python3
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
-   name='Scraper_championsgg',
-   version='1.0',
+   name='champsgg-scraper',
+   version='1.1',
    description='Module for getting informations for League of Legend champions',
    author='p0',
    author_email='kylian.p@protonmail.ch',
-   packages=['Scraper_championsgg'], 
+   packages=['scraper'],
+   url="https://github.com/p0lux/Scraper_LeagueOfLegend",
    install_requires=['requests', 'beautifulsoup4', 'termcolor'],
-   scripts=[
-   			'modules/get_items',
-   			'modules/get_runes'
-   			]
+   entry_points={"console_scripts": ["scraper=scraper.__main__:main",]}
 )
 
