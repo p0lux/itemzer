@@ -1,5 +1,16 @@
 ### Fonctionnement
 
+
+## TODOS 
+
+[ ] Updating architecture 
+[ ] Create a module for getting order spells
+[ ] Create package for pypi
+
+
+
+
+## OUTDATED
 **Pré-requis :**
 
 - Python3
