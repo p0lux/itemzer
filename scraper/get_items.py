@@ -1,4 +1,4 @@
-from modules.request_page import RequestPage
+from scraper.request_page import RequestPage
 from termcolor import colored
 
 

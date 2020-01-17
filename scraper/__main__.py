@@ -1,7 +1,9 @@
  #! /usr/bin/env python3 
 
-from modules.get_runes import GetRunes
-from modules.get_items import GetItems
+# import scraper
+
+from scraper.get_items import GetItems
+from scraper.get_runes import GetRunes
 
 import sys   
 
