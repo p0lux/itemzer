@@ -3,9 +3,9 @@
 
 ## TODOS 
 
-[ ] Updating architecture 
-[ ] Create a module for getting order spells
-[ ] Create package for pypi
+- [ ] Updating architecture 
+- [ ] Create a module for getting order spells
+- [ ] Create package for pypi
 
 
 
