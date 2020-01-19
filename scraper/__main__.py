@@ -19,9 +19,8 @@ import os
 
 
 def main():
-        
-    # GetItems(sys.argv[1]).get_items()
-    # GetRunes(sys.argv[1]).list_runes()
+    GetItems(sys.argv[1]).get_items()
+    GetRunes(sys.argv[1]).list_runes()
     GetSkills(sys.argv[1]).get_skills() 
 
 if __name__ == "__main__":

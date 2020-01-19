@@ -14,7 +14,8 @@ class GetSkills:
 		list_skills = [value.text.replace('\t', '').replace('\n', '') for value in get_table]
 		
 
-		print(colored("=== FIRST 3 SKILLS === ", 'green'))
-		print(" ".join(list_skills[:3]))
+		print(colored("=== FIRST 3 SKILLS === ", 'red'))
+		for value in list_skills[:3]:
+			print("%s : %s" % (colored(counter_skills, 'green'), colored(value, 'cyan')))
 		
 		
