@@ -8,7 +8,7 @@ setup(
    author='p0',
    author_email='kylian.p@protonmail.ch',
    packages=['itemzer'],
-   url="https://github.com/p0lux/Scraper_LeagueOfLegend",
+   url="https://github.com/p0lux/Itemzer",
    install_requires=['requests', 'beautifulsoup4'],
    entry_points={"console_scripts": ["itemzer=itemzer.__main__:main",]}
 )
