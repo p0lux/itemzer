@@ -30,4 +30,4 @@ If you want to add new features, don't hesitate to open issues or by contacting 
 - [X] Create a module for getting the spells order
 - [X] Create a package Pypi
 - [X] Adding support for windows
-- [ ] Catch error 
+- [X] Catch error 

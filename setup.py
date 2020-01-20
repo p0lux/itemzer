@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
    name='itemzer',
-   version='1.0.0',
+   version='1.0.1',
    description='Module for getting informations for League of Legend champions',
    author='p0',
    author_email='kylian.p@protonmail.ch',
