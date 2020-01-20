@@ -1,5 +1,4 @@
 from itemzer.request_page import RequestPage
-from termcolor import colored
 
 
 class GetSkills:
