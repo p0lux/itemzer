@@ -22,7 +22,3 @@ class RequestPage:
 	def return_content_op(self):
 		bsoup = bs(self.get_content_page_op(), 'html.parser')
 		return bsoup
-
-	
-
-	

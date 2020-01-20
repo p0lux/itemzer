@@ -1,4 +1,4 @@
-from scraper.request_page import RequestPage
+from itemzer.request_page import RequestPage
 from termcolor import colored
 
 
@@ -32,11 +32,9 @@ class GetRunes:
 
 		return list_runes
 
-
 	def list_runes(self):
-
 		index = 1
-		print(colored("=== RUNES ===", 'red'))
+		print("\u001b[31m === RUNES ===")
 		for value in self.get_runes():
-			print("%s : %s" % (colored(index, 'green'), colored(value, 'cyan')))
+			print(u"\u001b[32m%s\u001b[0m: \u001b[36m%s\u001b[0m" % (index, value))
 			index += 1
