@@ -8,9 +8,15 @@ import sys
 
 
 def main():
-    GetItems(sys.argv[1]).get_items()
-    GetRunes(sys.argv[1]).list_runes()
-    GetSkills(sys.argv[1]).get_skills()
+    try:
+        GetItems(sys.argv[1]).get_items()
+        GetRunes(sys.argv[1]).list_runes()
+        GetSkills(sys.argv[1]).get_skills()
+    except AttributeError:
+        print("Champion name unknown")
+    except BaseException:
+        print("Error during getting informations. Please try again")
+
 
 if __name__ == "__main__":
     main()

@@ -2,6 +2,11 @@
 
 This module has been created to help League Of Legend players find the best stuff for their champions without having to go on the internet.
 
+I request 2 different website : 
+
+- champions.gg (items & mastery's)
+- op.gg (starting skills)
+
 ### How to use it ? 
 
 - Firstly, you need to install `Python3`
@@ -22,6 +27,7 @@ If you want to add new features, don't hesitate to open issues or by contacting 
 ### TO-DO
 
 - [X] Updating architecture
-- [X] Create a module for getting the order of the spells
+- [X] Create a module for getting the spells order
 - [X] Create a package Pypi
 - [X] Adding support for windows
+- [ ] Catch error 
