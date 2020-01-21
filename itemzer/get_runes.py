@@ -1,4 +1,4 @@
-from itemzer.request_page import RequestPage
+from itemzer.request_page import return_content_bs
 
 
 class GetRunes:
@@ -7,12 +7,9 @@ class GetRunes:
 		self.name = name
 
 	def get_runes(self):
-
 		list_runes = []
-		
-		get_runes_section = RequestPage(self.name).return_content_bs().find('section', id="primary-path")
-
-		runes_index = 1						
+		get_runes_section = return_content_bs(self.name).find('section', id="primary-path")
+		runes_index = 1
 		# Get title first runes
 		list_runes.append(get_runes_section.find('div', class_="KeyStoneSlot__Title-krZhKQ eQgjEC Description__Title-jfHpQH bJtdXG").text)
 
@@ -20,7 +17,7 @@ class GetRunes:
 		for atout in get_runes_section.find_all('div', class_="Description__Title-jfHpQH bJtdXG"):
 			list_runes.append(atout.text)
 
-		second_runes = RequestPage(self.name).return_content_bs().find('section', id='secondary-path')
+		second_runes = return_content_bs(self.name).find('section', id='secondary-path')
 
 		# Get title second runes
 		for atout2 in second_runes.find_all('div', class_="Description__Title-jfHpQH eOLOWg"):

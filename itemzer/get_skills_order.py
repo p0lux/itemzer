@@ -1,4 +1,4 @@
-from itemzer.request_page import RequestPage
+from itemzer.request_page import return_content_op
 
 
 class GetSkills:
@@ -8,7 +8,7 @@ class GetSkills:
 
 	def get_skills(self):
 		counter_skills = 1
-		get = RequestPage(self.name).return_content_op().find('table', class_='champion-skill-build__table')
+		get = return_content_op(self.name).find('table', class_='champion-skill-build__table')
 		get_table = get.find_all('td')
 		list_skills = [value.text.replace('\t', '').replace('\n', '') for value in get_table]
 
