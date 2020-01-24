@@ -1,11 +1,19 @@
  #! /usr/bin/env python3 
 
+# import modules
 from itemzer.get_items import GetItems
 from itemzer.get_runes import GetRunes
 from itemzer.get_skills_order import GetSkills
 from itemzer.get_counter_champs import GetCounter
 
+# import system
 import sys
+import argparse
+
+# Adding commands
+# parser_help = argparse.ArgumentParser(description='Description foo bar')
+# parser_help.add_argument('--counter', help='Display counter of your champ', type=str)
+# args = parser_help.parse_args()
 
 
 def main():

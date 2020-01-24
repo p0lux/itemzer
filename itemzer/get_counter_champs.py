@@ -1,14 +1,15 @@
-from itemzer.request_page import return_content_lol_counter
+from itemzer.request_page import make_bs4_element
 
 
 class GetCounter:
 
     def __init__(self, name):
         self.name = name
+        self.url = f"https://lolcounter.com/champions/{self.name}"
 
     def get_counter(self):
         list_champs = []
-        get = return_content_lol_counter(self.name).find("div", class_="weak-block")
+        get = make_bs4_element(self.url).find("div", class_="weak-block")
 
         # Get all counter champs but display only 5 champs
         for champs in get.find_all('div', class_="name"):
@@ -17,7 +18,7 @@ class GetCounter:
 
     def get_strong(self):
         list_champs = []
-        get = return_content_lol_counter(self.name).find("div", class_="strong-block")
+        get = make_bs4_element(self.url).find("div", class_="strong-block")
 
         for champs in get.find_all('div', class_='name'):
             list_champs.append(champs.text)

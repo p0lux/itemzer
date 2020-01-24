@@ -1,4 +1,4 @@
-from itemzer.request_page import return_content_bs
+from itemzer.request_page import make_bs4_element
 
 
 class GetItems:
@@ -8,7 +8,7 @@ class GetItems:
 
 	def get_items(self):
 		list_items = []
-		items = return_content_bs(self.name).find("div", class_="build-wrapper")
+		items = make_bs4_element('https://champion.gg/champion/%s' % self.name).find("div", class_="build-wrapper")
 
 		for lien in items.find_all('a', href=True):
 			list_items.append(lien['href'].split('/')[-1])

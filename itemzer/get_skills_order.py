@@ -1,14 +1,15 @@
-from itemzer.request_page import return_content_op
+from itemzer.request_page import make_bs4_element
 
 
 class GetSkills:
 
 	def __init__(self, name):
 		self.name = name
+		self.url = f"http://www.op.gg/champion/{self.name}/statistics/top"
 
 	def get_skills(self):
 		counter_skills = 1
-		get = return_content_op(self.name).find('table', class_='champion-skill-build__table')
+		get = make_bs4_element(self.url).find('table', class_='champion-skill-build__table')
 		get_table = get.find_all('td')
 		list_skills = [value.text.replace('\t', '').replace('\n', '') for value in get_table]
 

@@ -28,4 +28,4 @@ If you want to add new features, don't hesitate to open issues or by contacting 
 
 - [ ] API calls from official api
     - [ ] Get informations from enemis team
-- [ ] Counter champs
+- [X] Counter champs
