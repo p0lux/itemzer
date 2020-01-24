@@ -15,6 +15,6 @@ class GetSkills:
 
 		print("\u001b[31m === FIRST 3 SKILLS === ")
 		for value in list_skills[:3]:
-			print(u"\u001b[32m%s\u001b[0m:\u001b[36m%s\u001b[0m " % (counter_skills, value), end=" ")
+			print(f"\u001b[32m{counter_skills}\u001b[0m:\u001b[36m{value}\u001b[0m", end=" ")
 
 			counter_skills += 1

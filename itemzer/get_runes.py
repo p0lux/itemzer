@@ -33,5 +33,5 @@ class GetRunes:
 		index = 1
 		print("\u001b[31m === RUNES ===")
 		for value in self.get_runes():
-			print(u"\u001b[32m%s\u001b[0m: \u001b[36m%s\u001b[0m" % (index, value))
+			print(f"\u001b[32m{index}\u001b[0m: \u001b[36m{value}\u001b[0m")
 			index += 1

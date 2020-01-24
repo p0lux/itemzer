@@ -5,10 +5,11 @@ class GetItems:
 
 	def __init__(self, name):
 		self.name = name
+		self.url = f"https://champion.gg/champion/{self.name}"
 
 	def get_items(self):
 		list_items = []
-		items = make_bs4_element('https://champion.gg/champion/%s' % self.name).find("div", class_="build-wrapper")
+		items = make_bs4_element(self.url).find("div", class_="build-wrapper")
 
 		for lien in items.find_all('a', href=True):
 			list_items.append(lien['href'].split('/')[-1])
@@ -16,5 +17,5 @@ class GetItems:
 		print("\u001b[31m === ITEMS ===")
 
 		for value_item in list_items:
-			print(u"\u001b[32m%s\u001b[0m: \u001b[36m%s\u001b[0m" % (item_index, value_item))
+			print(f"\u001b[32m{item_index}\u001b[0m: \u001b[36m{value_item}\u001b[0m")
 			item_index += 1

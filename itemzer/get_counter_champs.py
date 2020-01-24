@@ -22,9 +22,9 @@ class GetCounter:
 
         for champs in get.find_all('div', class_='name'):
             list_champs.append(champs.text)
-        return u"\u001b[36m%s\u001b[0m is strong against : \u001b[32m%s\u001b[0m " % (self.name.capitalize(), ", ".join(list_champs[:5]))
+        return f"\u001b[36m{self.name.capitalize()}\u001b[0m is strong against : \u001b[32m%s\u001b[0m" % ", ".join(list_champs[:5])
 
     def get_counter_strong(self):
-        print("\n\u001b[31m === Counter & Stronger ===\u001b[0m")
+        print("\n\u001b[31m === COUNTER & STRONGER ===\u001b[0m")
         print(self.get_counter())
         print(self.get_strong())
