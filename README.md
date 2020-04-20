@@ -10,7 +10,7 @@ I request 2 different website :
 ### How to use it ? 
 
 - Firstly, you need to install `Python3`
-- Secondly, ypu just need to install the package `itemzer` from Pypi
+- Secondly, you just need to install the package `itemzer` from Pypi
 
 `pip install itemzer`
 
