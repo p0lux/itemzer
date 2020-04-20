@@ -29,4 +29,5 @@ If you want to add new features, don't hesitate to open issues or by contacting 
 - [ ] API calls from official api
     - [ ] Get informations from enemis team
 - [X] Counter champs
+- [ ] Color term for Windows & Mac / Linux
 - [ ] Create desktop app with Beeware 
